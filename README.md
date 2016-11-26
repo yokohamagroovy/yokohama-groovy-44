@@ -167,6 +167,19 @@ docker run --rm grimrose/yokohama-groovy-44:jar
 jarが実行されて、結果が表示されていればOKです。
 
 
+## Gradleを使ってDockerを動かしてみよう
+
+Gradleでdockerに関するpluginsは[こちら](https://plugins.gradle.org/search?term=docker)です。
+
+### GradleのタスクでDockerイメージを作ってみよう
+
+今回は、[bmuschko/gradle-docker-plugin](https://github.com/bmuschko/gradle-docker-plugin)を利用します。
+
+Javaのアプリケーションのイメージを作る場合は、[こちら](https://github.com/bmuschko/gradle-docker-plugin/blob/master/README.asciidoc#java-application-plugin)を参考にしてください。
+
+dockerを[remote API](https://docs.docker.com/engine/reference/api/docker_remote_api/)を介して動かしてみる場合は、[こちら](https://github.com/bmuschko/gradle-docker-plugin/blob/master/README.asciidoc#remote-api-plugin)を参考にしてください。
+
+
 ## 小ネタ
 
 タグの付いていないイメージを消す場合、このコマンドを実行します。
